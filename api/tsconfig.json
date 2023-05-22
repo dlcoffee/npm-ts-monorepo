@@ -5,8 +5,7 @@
     "outDir": "dist",
     "noEmit": false,
     "paths": {
-      "@scope/name": ["../utils/src/index.ts"],
-      "@scope/name/*": ["../utils/src/*"]
+      "@qwert/utils": ["../utils/src/index.ts"]
     }
   },
   "include": ["src/**/*"],
