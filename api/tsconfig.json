@@ -3,7 +3,11 @@
   "compilerOptions": {
     "module": "commonjs",
     "outDir": "dist",
-    "noEmit": false
+    "noEmit": false,
+    "paths": {
+      "@scope/name": ["../utils/src/index.ts"],
+      "@scope/name/*": ["../utils/src/*"]
+    }
   },
   "include": ["src/**/*"],
   "references": [

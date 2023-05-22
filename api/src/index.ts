@@ -1,5 +1,6 @@
 import express from 'express'
-import { my_merge } from '../../utils/src/index'
+//import { my_merge } from '@qwert/utils'
+import { my_merge } from '@scope/name'
 
 const app = express()
 const port = 3000
