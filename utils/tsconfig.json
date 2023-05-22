@@ -4,5 +4,6 @@
     "module": "commonjs",
     "outDir": "dist",
     "noEmit": false
-  }
+  },
+  "include": ["src/**/*"]
 }

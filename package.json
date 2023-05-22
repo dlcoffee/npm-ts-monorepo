@@ -12,6 +12,6 @@
     "utils"
   ],
   "devDependencies": {
-    "typescript": "^5.0.4"
+    "typescript": "^4.9.5"
   }
 }
