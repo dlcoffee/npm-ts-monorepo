@@ -1,21 +1,12 @@
 {
-  "compilerOptions": {
-    "composite": true,
-    "allowSyntheticDefaultImports": true,
-    "noEmitOnError": true,
-    "declaration": true,
-    "declarationMap": true,
-    "target": "esnext",
-    "strictNullChecks": true,
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "isolatedModules": true,
-    "incremental": true
-  }
+  "extends": "./tsconfig.options.json",
+  "files": [],
+  "references": [
+    {
+      "path": "api"
+    },
+    {
+      "path": "utils"
+    }
+  ]
 }
