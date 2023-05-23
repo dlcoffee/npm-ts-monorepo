@@ -1,5 +1,5 @@
 import express from 'express'
-import { FOO, my_merge } from '@qwert/utils'
+import { my_merge } from '@qwert/utils'
 
 const app = express()
 const port = 3000

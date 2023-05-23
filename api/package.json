@@ -5,8 +5,35 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/src/index.js",
-    "build": "rm -rf dist && tsc"
+    "build": "wireit",
+    "dev": "wireit",
+    "start": "NODE_ENV=production node dist/src/index.js"
+  },
+  "wireit": {
+    "build": {
+      "command": "tsc",
+      "clean": "if-file-deleted",
+      "dependencies": [
+        "../utils:build"
+      ],
+      "files": [
+        "src/**/*.ts",
+        "tsconfig.json"
+      ],
+      "output": [
+        "dist/**/*"
+      ]
+    },
+    "dev": {
+      "command": "node dist/src/index.js",
+      "service": true,
+      "dependencies": [
+        "build"
+      ],
+      "files": [
+        "src/**/*.ts"
+      ]
+    }
   },
   "author": "",
   "license": "ISC",
