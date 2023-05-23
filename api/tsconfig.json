@@ -3,15 +3,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "outDir": "dist",
-    "noEmit": false,
-    "paths": {
-      "@qwert/utils": ["../utils/src/index.ts"]
-    }
+    "noEmit": false
   },
-  "include": ["src/**/*"],
-  "references": [
-    {
-      "path": "../utils"
-    }
-  ]
+  "include": ["src/**/*"]
 }
